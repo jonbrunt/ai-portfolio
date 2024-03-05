@@ -1,4 +1,4 @@
 {
-  "extends": "next/core-web-vitals",
-  "ignorePatterns": ["**/*.mjs"]
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "ignorePatterns": ["**/*.mjs", "**/*.config.js"]
 }
