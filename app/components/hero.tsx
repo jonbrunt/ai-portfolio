@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="min-height-minus-navbar hero bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
         <Image
           src="/brunt-headshot.jpg"
