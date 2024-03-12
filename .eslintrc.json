@@ -1,4 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
-  "ignorePatterns": ["**/*.mjs", "**/*.config.js"]
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["**/*.mjs", "**/*.config.js", "**/*.setup.js"]
 }
