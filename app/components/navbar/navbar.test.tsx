@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import Navbar from "@/app/components/navbar/navbar";
 
-describe("Navbar component tests", () => {
+describe("Navbar component unit tests", () => {
   const mockSetCurrentView: jest.Mock<void, [string]> = jest.fn();
   // mock scrollTo before each test
   beforeEach(() => {
@@ -17,14 +17,14 @@ describe("Navbar component tests", () => {
   });
 
   // test for the name display
-  it("displays the name 'Jonathan Brunt'", () => {
+  it("has element that displays the name 'Jonathan Brunt'", () => {
     render(<Navbar setCurrentView={mockSetCurrentView} />);
     const nameDisplay: HTMLElement = screen.getByText("Jonathan Brunt");
     expect(nameDisplay).toBeInTheDocument();
   });
 
-  // test for the theme controller's presence and toggle functionality
-  it("contains a theme controller that can be toggled", () => {
+  // test for the theme controller and its toggle functionality
+  it("has a theme controller that can be toggled", () => {
     render(<Navbar setCurrentView={mockSetCurrentView} />);
     const themeController: HTMLInputElement = screen.getByRole(
       "checkbox"
@@ -39,7 +39,7 @@ describe("Navbar component tests", () => {
   });
 
   // test for the dropdown menu's presence
-  it("has a dropdown menu for navigation", () => {
+  it("has a dropdown menu", () => {
     render(<Navbar setCurrentView={mockSetCurrentView} />);
     const dropdownButton: HTMLButtonElement = screen.getByRole("button", {
       name: "Menu",
@@ -73,15 +73,15 @@ describe("Navbar component tests", () => {
   // test to check if window.scrollTo is called when menu item is clicked
   it("calls window.scrollTo on item click", () => {
     render(<Navbar setCurrentView={mockSetCurrentView} />);
-    // Assuming "Home" is one of the items that triggers scrolling
     const menuItem: HTMLElement = screen.getByText("Home");
     fireEvent.click(menuItem);
-    // Check if window.scrollTo was called
+    // check if window.scrollTo was called
     expect(window.scrollTo).toHaveBeenCalledWith(0, 0);
   });
 
-  // test to check if dropdown menu toggles on click/click outside the menu (to close)
-  // it("toggles the dropdown menu on click", async () => {
+  // // test to check if dropdown menu toggles on click/click outside the menu (to close)
+  // // BUGGY: consider for integration or e2e testing
+  // it("the dropdown menu toggles on click", async () => {
   //   const { container }: { container: Element } = render(
   //     <Navbar setCurrentView={mockSetCurrentView} />
   //   );
@@ -90,7 +90,7 @@ describe("Navbar component tests", () => {
   //   }) as HTMLButtonElement;
   //   // open the dropdown menu
   //   fireEvent.click(dropdownButton);
-  //   const dropdownContent = screen.getByText("Home");
+  //   const dropdownContent = screen.getByText("Home"); // MISSING TYPE
   //   // check if the dropdown content is visible
   //   expect(dropdownContent).toBeVisible();
   //   fireEvent.mouseDown(container);
