@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero-content flex-col lg:flex-row">
         <Image
           src="/brunt-headshot.jpg"
-          alt="Jonathan Brunt Headshot Picture"
+          alt="Jonathan Brunt Professional Picture"
           width="384"
           height="384"
           className="max-w-xs rounded-lg shadow-2xl"

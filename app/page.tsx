@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
+import Navbar from "./components/navbar/navbar";
+import Hero from "./components/hero/hero";
 
 const Home: React.FC = () => {
   const [currentView, setCurrentView] = useState<string>("Home");
