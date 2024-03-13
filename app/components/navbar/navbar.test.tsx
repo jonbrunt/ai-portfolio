@@ -13,6 +13,7 @@ describe("Navbar component unit tests", () => {
     const { container }: { container: Element } = render(
       <Navbar setCurrentView={mockSetCurrentView} />
     );
+
     expect(container).toBeInTheDocument();
   });
 
@@ -29,6 +30,7 @@ describe("Navbar component unit tests", () => {
     const themeController: HTMLInputElement = screen.getByRole(
       "checkbox"
     ) as HTMLInputElement;
+
     expect(themeController).toBeInTheDocument();
     // first click to toggle on
     fireEvent.click(themeController);
@@ -44,6 +46,7 @@ describe("Navbar component unit tests", () => {
     const dropdownButton: HTMLButtonElement = screen.getByRole("button", {
       name: "Menu",
     }) as HTMLButtonElement;
+
     fireEvent.click(dropdownButton);
     const dropdownContent: HTMLElement = screen.getByText("Home");
     expect(dropdownContent).toBeInTheDocument();
