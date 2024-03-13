@@ -14,6 +14,7 @@ describe("Hero component unit tests", () => {
     const image: HTMLImageElement = screen.getByAltText(
       "Jonathan Brunt Professional Picture"
     ) as HTMLImageElement;
+
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("width", "384");
     expect(image).toHaveAttribute("height", "384");
@@ -23,9 +24,9 @@ describe("Hero component unit tests", () => {
   it("has an h1 element with the text 'Jonathan Brunt: AI Engineer'", () => {
     render(<Hero />);
     const heading: HTMLHeadingElement = screen.getByText(
-      "Jonathan Brunt: AI Engineer",
-      { selector: "h1" }
+      "Jonathan Brunt: AI Engineer"
     ) as HTMLHeadingElement;
+
     expect(heading).toBeInTheDocument();
     expect(heading.tagName).toBe("H1");
   });
@@ -39,6 +40,7 @@ describe("Hero component unit tests", () => {
         element.tagName.toLowerCase() === "p" &&
         content.length > 100
     ) as HTMLParagraphElement;
+
     expect(paragraph).toBeInTheDocument();
   });
 
@@ -48,6 +50,7 @@ describe("Hero component unit tests", () => {
     const button: HTMLButtonElement = screen.getByRole("button", {
       name: "My Projects",
     }) as HTMLButtonElement;
+
     expect(button).toBeInTheDocument();
   });
 });
