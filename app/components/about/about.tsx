@@ -6,7 +6,7 @@ const About = () => {
       <h1 className="mb-5 mt-16 text-center text-3xl font-bold">About</h1>
       <figure>
         <Image
-          src="/brunt-headshot.jpg"
+          src="/brunt-computer.webp"
           alt="Jonathan Brunt's Logo"
           width="320"
           height="320"
