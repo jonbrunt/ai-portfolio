@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="min-height-minus-navbar hero bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
         <Image
-          src="/brunt-headshot.jpg"
+          src="/brunt-headshot.webp"
           alt="Jonathan Brunt Professional Picture"
           width="384"
           height="384"
