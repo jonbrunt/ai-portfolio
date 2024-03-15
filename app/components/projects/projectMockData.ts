@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
   id: number;
   srcAttr: string;
   altAttr: string;
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     altAttr: "Project 1",
     title: "Project 1",
     description:
-      "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+      "Project 1 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
     githubBoolean: true,
   },
   {
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     altAttr: "Project 2",
     title: "Project 2",
     description:
-      "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+      "Project 2 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
     githubBoolean: true,
   },
   {
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     altAttr: "Project 3",
     title: "Project 3",
     description:
-      "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+      "Project 3 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
     githubBoolean: true,
   },
   {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     altAttr: "Project 4",
     title: "Project 4",
     description:
-      "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+      "Project 4 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
     githubBoolean: false,
   },
   {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     altAttr: "Project 5",
     title: "Project 5",
     description:
-      "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+      "Project 5 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
     githubBoolean: false,
   },
 ];
