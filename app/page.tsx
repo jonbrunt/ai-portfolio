@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
+import Projects from "./components/projects/projects";
 
 const Home: React.FC = () => {
   const [currentView, setCurrentView] = useState<string>("Home");
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       {currentView === "Home" && <Hero />}
       {currentView === "About" && <About />}
       {currentView === "Skills" && <Skills />}
+      {currentView === "Projects" && <Projects />}
     </div>
   );
 };
