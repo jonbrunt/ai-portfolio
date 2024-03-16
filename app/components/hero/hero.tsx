@@ -14,7 +14,7 @@ const Hero = () => {
         {/* title and intro */}
         <div className="px-6">
           <h1 className="text-3xl font-bold md:text-5xl">
-            Jonathan Brunt: AI Engineer
+            Jonathann Brunt: AI Engineer
           </h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
