@@ -47,7 +47,7 @@ describe("Projects component unit tests", () => {
   // test for each project's text information (header and paragraph)
   it("renders each project from the projectMockData with a heading and a description", () => {
     render(<Projects />);
-    const cards = screen.getAllByRole("article");
+    const cards: HTMLElement[] = screen.getAllByRole("article");
 
     cards.forEach((card) => {
       const heading: HTMLHeadingElement = within(card).getByRole("heading");
@@ -70,7 +70,7 @@ describe("Projects component unit tests", () => {
     render(<Projects />);
     const cards = screen.getAllByRole("article");
 
-    projects.forEach((project: Project, index) => {
+    projects.forEach((project: Project, index: number) => {
       if (project.githubBoolean) {
         const githubButton: HTMLButtonElement = within(cards[index]).getByRole(
           "button",
@@ -80,9 +80,12 @@ describe("Projects component unit tests", () => {
         );
         expect(githubButton).toBeInTheDocument();
       }
-      const openAppButton = within(cards[index]).getByRole("button", {
-        name: "Open App",
-      });
+      const openAppButton: HTMLButtonElement = within(cards[index]).getByRole(
+        "button",
+        {
+          name: "Open App",
+        }
+      );
       expect(openAppButton).toBeInTheDocument();
     });
   });
