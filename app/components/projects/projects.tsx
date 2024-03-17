@@ -14,10 +14,7 @@ const Projects = () => {
         {/* project mapping from projectMockData.ts */}
         {projects.map((project) => (
           <article key={project.id}>
-            <div
-              key={project.id}
-              className="card mb-10 w-96 bg-base-100 shadow-2xl"
-            >
+            <div className="card mb-10 w-96 bg-base-100 shadow-2xl">
               <figure>
                 <Image
                   src={project.srcAttr}
