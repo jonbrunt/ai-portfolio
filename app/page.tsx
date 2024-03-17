@@ -7,6 +7,7 @@ import About from "./components/about/about";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Blog from "./components/blog/blog";
+import YouTube from "./components/youtube/youtube";
 
 const Home: React.FC = () => {
   const [currentView, setCurrentView] = useState<string>("Home");
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
       {currentView === "Skills" && <Skills />}
       {currentView === "Projects" && <Projects />}
       {currentView === "Blog" && <Blog />}
+      {currentView === "YouTube" && <YouTube />}
     </div>
   );
 };
