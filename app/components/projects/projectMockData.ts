@@ -10,7 +10,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    srcAttr: "/ai-1.png",
+    srcAttr: "/project.webp",
     altAttr: "Project 1",
     title: "Project 1",
     description:
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    srcAttr: "/ai-1.png",
+    srcAttr: "/project.webp",
     altAttr: "Project 2",
     title: "Project 2",
     description:
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    srcAttr: "/ai-1.png",
+    srcAttr: "/project.webp",
     altAttr: "Project 3",
     title: "Project 3",
     description:
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    srcAttr: "/ai-1.png",
+    srcAttr: "/project.webp",
     altAttr: "Project 4",
     title: "Project 4",
     description:
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    srcAttr: "/ai-1.png",
+    srcAttr: "/project.webp",
     altAttr: "Project 5",
     title: "Project 5",
     description:

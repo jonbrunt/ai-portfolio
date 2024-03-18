@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const [currentView, setCurrentView] = useState<string>("Home");
 
   return (
-    <div data-theme="luxury">
+    <div data-theme="dark">
       <Navbar setCurrentView={setCurrentView} />
       {currentView === "Home" && <Hero />}
       {currentView === "About" && <About />}
