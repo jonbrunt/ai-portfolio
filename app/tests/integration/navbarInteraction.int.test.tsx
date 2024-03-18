@@ -1,6 +1,9 @@
 import { render, fireEvent, screen, within } from "@testing-library/react";
 import Page from "@/app/page";
 
+// Mocking window.scrollTo
+window.scrollTo = jest.fn();
+
 interface MenuItem {
   name: string;
   markerText: string;
