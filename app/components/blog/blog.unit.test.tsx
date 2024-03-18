@@ -44,8 +44,8 @@ describe("Blog component unit tests", () => {
     });
   });
 
-  // test for each post's text information (header and paragraph)
-  it("renders each project from the projectMockData with a heading and a description", () => {
+  // test for each blog post's text information (header and paragraph)
+  it("renders each blog post from the blogMockData with a heading and a description", () => {
     render(<Blog />);
     const cards: HTMLElement[] = screen.getAllByRole("article");
 
@@ -71,9 +71,12 @@ describe("Blog component unit tests", () => {
     const cards: HTMLElement[] = screen.getAllByRole("article");
 
     posts.forEach((post: Post, index: number) => {
-      const readButton = within(cards[index]).getByRole("button", {
-        name: "Read",
-      });
+      const readButton: HTMLButtonElement = within(cards[index]).getByRole(
+        "button",
+        {
+          name: "Read",
+        }
+      );
       expect(readButton).toBeInTheDocument();
     });
   });
