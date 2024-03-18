@@ -12,7 +12,9 @@
     "format:fix": "prettier --write --ignore-path .gitignore --list-different .",
     "prepare": "husky",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "test:unit": "jest --testPathPattern=\\.unit\\.test\\.tsx$",
+    "test:integration": "jest --testPathPattern=\\.int\\.test\\.tsx$"
   },
   "dependencies": {
     "next": "14.1.1",

@@ -23,7 +23,10 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentView }) => {
   };
 
   return (
-    <div className="navbar sticky top-0 z-[1000] h-[4rem] bg-base-300">
+    <div
+      data-testid="navbar"
+      className="navbar sticky top-0 z-[1000] h-[4rem] bg-base-300"
+    >
       <div className="flex-1 px-2 lg:flex-none">
         <a className="text-lg font-bold">Jonathan Brunt</a>
       </div>
