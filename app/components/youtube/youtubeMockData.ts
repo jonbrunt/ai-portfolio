@@ -9,7 +9,7 @@ export interface Video {
 export const videos: Video[] = [
   {
     id: 1,
-    srcAttr: "/youtube.png",
+    srcAttr: "/youtube.webp",
     altAttr: "Video 1",
     title: "Video 1",
     description:
@@ -17,7 +17,7 @@ export const videos: Video[] = [
   },
   {
     id: 2,
-    srcAttr: "/youtube.png",
+    srcAttr: "/youtube.webp",
     altAttr: "Video 2",
     title: "Video 2",
     description:
@@ -25,7 +25,7 @@ export const videos: Video[] = [
   },
   {
     id: 3,
-    srcAttr: "/youtube.png",
+    srcAttr: "/youtube.webp",
     altAttr: "Video 3",
     title: "Video 3",
     description:

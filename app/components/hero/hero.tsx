@@ -10,6 +10,7 @@ const Hero = () => {
           width="384"
           height="384"
           className="max-w-xs rounded-lg shadow-2xl"
+          priority
         />
         {/* title and intro */}
         <div className="px-6">

@@ -9,7 +9,7 @@ export interface Post {
 export const posts: Post[] = [
   {
     id: 1,
-    srcAttr: "/blog.png",
+    srcAttr: "/blog.webp",
     altAttr: "Post 1",
     title: "Post 1",
     description:
@@ -17,7 +17,7 @@ export const posts: Post[] = [
   },
   {
     id: 2,
-    srcAttr: "/blog.png",
+    srcAttr: "/blog.webp",
     altAttr: "Post 2",
     title: "Post 2",
     description:
@@ -25,7 +25,7 @@ export const posts: Post[] = [
   },
   {
     id: 3,
-    srcAttr: "/blog.png",
+    srcAttr: "/blog.webp",
     altAttr: "Post 3",
     title: "Post 3",
     description:
